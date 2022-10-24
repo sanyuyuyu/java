@@ -3,11 +3,12 @@
 
 
  
-class Test_variable
+class Test_cho
 {
 	public static void main(String[] args)
 	 {
-	
-		System.out.println("hello");	
+	    boolean rain = true;
+		if(rain==true);
+		System.out.println("今天下雨了，记得带伞");	
      }    
 }
