@@ -10,5 +10,7 @@ class Test_cho
 	    boolean rain = true;
 		if(rain==true);
 		System.out.println("今天下雨了，记得带伞");	
+	
+	
      }    
 }
