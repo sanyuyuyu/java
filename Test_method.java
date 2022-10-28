@@ -4,6 +4,7 @@ class Test_method
     {
         getprintname();
         getprintname();
+        getprintname();
 
     }
         public static void getprintname()
