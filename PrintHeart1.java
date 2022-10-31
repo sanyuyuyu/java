@@ -43,7 +43,7 @@
     /**
     *打印心形
     */
-   public static void aiXin(){
+  /* public static void aiXin(){
 		public static void main(String[] args)
           for(float y = (float) 1.5;y>-1.5;y -=0.1)  {  
               for(float x= (float) -1.5;x<1.5;x+= 0.05){  
@@ -57,7 +57,7 @@
               System.out.println();  
        }  
     }
-	
+	*/
 	 
 class PrintHeart1 {
 
