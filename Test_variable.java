@@ -3,7 +3,6 @@
 /* 目的：用于学习java
 */
 
-
  
 class Test_variable
 {
@@ -57,8 +56,6 @@ class Test_variable
 		boolean ee = (1 > 2) || (10 / 2 == 0 );
 		System.out.println("ee的值为:"+ee);
         */
-	
-
 
      }    
 }

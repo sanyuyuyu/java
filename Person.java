@@ -1,25 +1,28 @@
-/*定义类
-class Person
-{
-    public String name; String类型字段
-    public int age;  public修饰字段 表示字段可以外部访问
-} */
+// 定义类
+// class Person
+// {
+//     public String name; // String类型字段
+//     public int age;  // public修饰字段 表示字段可以外部访问
+// }
 
-/*public calss Person
+public class Person
 {
     public static void main(String[] args)
     {
         City zj = new City();
+        Pig a = "";
+        Sheep b = "";
         zj.name = "zhejiang";
         System.out.println(zj.name);
+        // return 10;
     }
-
 }
+
 class City
 {
     public String name;
 }
-*/
+
 /*
 class Person 
 {
@@ -47,7 +50,7 @@ class Person
 }
 */
 
-public class Main 
+/*public class Main 
 {
     public sratic void main(String[] args)
     {
@@ -98,4 +101,5 @@ public void serName(String name)
 
     }
     this.name = name.strip();
-}
+*/
+
