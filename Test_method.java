@@ -191,4 +191,4 @@ class Test_method
         }
     }
 }
- 
+ class
