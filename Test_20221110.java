@@ -9,14 +9,13 @@ class Test_20221110
         myself.num = 20220118133l;
         myself.getInfo();
     }
-    class Stu
-    {
+}
+class Stu
+{
         public String name; //def
         public int age;
         public String male;
         public long num;
-        
-
 
         public void setName(String outName)
         {
@@ -54,5 +53,5 @@ class Test_20221110
         }
 
 
-    }
 }
+

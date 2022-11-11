@@ -13,8 +13,9 @@ public class Test
             }
             Thread.sleep(120);
             System.err.println("");
+           
        } 
-
+         System.out.println("                        刘昌鑫天天开心            ");
 
     }
 
