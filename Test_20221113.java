@@ -1,20 +1,19 @@
-class Test_wss
+class Test_20221113
 {
     public static void main(String[] args)
     {
         emp emp1 = new emp();
-        emp1.setName("刘备");
-        emp1.setSal(4000);
-        emp1.getInfo();
+        emp1.name = "刘备";
+        emp1.sal = 4000;
 
         emp emp2 = new emp();
-        emp2.setName("张飞");
-        emp2.setSal(3500);
+        emp2.name = "张飞";
+        emp2.sal = 3500;
         emp2.getInfo();
 
         emp emp3 = new emp();
-        emp3.setName("关羽");
-        emp3.setSal(3500);
+        emp3.name = "关羽";
+        emp3.sal = 3500;
         emp3.getInfo();
     }
 }
@@ -52,7 +51,7 @@ class emp
 
     public void getInfo()
     {
-        System.out.println("年龄:"+name+"sal:"+sal+"entp:"+entp);
+        System.out.println("年龄:"+name+" sal:"+sal+" entp:"+entp);
        {
          System.out.println("我是普通代码块");
        }
