@@ -1,24 +1,29 @@
-public class Test
+class Test
 {
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)
     {
-       for (float i = 1.5f; i > -1.5f; i -= 0.15f)
-       {
-            for (float j = -1.5f; j < 1.5f; j += 0.05f)
-            {
-                float a = i * i + j * j - 1;
-                String str = (a * a * a - j * j * i * i * i)
-                        <= 0.0f ? "*" : " ";
-                System.err.print(str);
-            }
-            Thread.sleep(120);
-            System.err.println("");
-           
-       } 
-         System.out.println("                        刘昌鑫天天开心            ");
+       Occupation temp = new Occupation();
+       temp.getInfo();
+        
 
+       
     }
-
-
-
+}
+class Occupation
+{
+    String name = "wangfei";
+    int age = 30;
+    String male = "nan";
+    String time = "12";
+    public void doctor(String name,int age,String male,String time)
+    {
+        this.name = name;
+        this.age = age;
+        this.male = male;
+        this.time = time;
+    }
+    public void getInfo()
+    {
+        System.out.println("name: "+name+"age: "+age+"male: "+male+"time: "+time);
+    }
 }

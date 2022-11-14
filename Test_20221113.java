@@ -2,16 +2,16 @@ class Test_20221113
 {
     public static void main(String[] args)
     {
-        emp emp1 = new emp();
+        Emp emp1 = new Emp();
         emp1.name = "刘备";
         emp1.sal = 4000;
 
-        emp emp2 = new emp();
+        Emp emp2 = new Emp();
         emp2.name = "张飞";
         emp2.sal = 3500;
         emp2.getInfo();
 
-        emp emp3 = new emp();
+        Emp emp3 = new Emp();
         emp3.name = "关羽";
         emp3.sal = 3500;
         emp3.getInfo();
@@ -19,17 +19,17 @@ class Test_20221113
 }
 
 
-class emp
+class Emp
 {
     public String name;
     public double sal;
     public String entp = "哪儿都通公司";
 
-    public emp()
+    public void emp()
     {
 
     }
-    public  emp(String outName,double outSal)
+    public void emp(String outName,double outSal)
     {
         name = outName;
         sal = outSal;
