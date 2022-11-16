@@ -2,42 +2,49 @@ class Test_6
 {
     public static void main(String[] args)
     {
-      Person person1 = new Person();
-      person1.SetName("wnagfei");
-      person1.SetAge(28);
-      person1.getInfo();
-      Stu student = new Stu();
-      student.name = "zs";
-      student.age = 19;
-      student.num = "2022";
-      student.school = "wz";
-      student.classes = "2";
-      student.getInfo();
-       String new_name = "ls";
-       int new_age = 28;
-       String new_num = "27";
-       String new_school = "wi";
-       String new_classes = "wo";
-       student.getandName(new_name,new_age,new_num,new_school,new_classes);
-      student.getInfo();
-      student.getandName(student.name,30,student.num,student.school,student.classes);
-      student.getInfo();
+        Person stu = new Person("文文",22,"浙江邮电职业技术学院","20211117676",1000);
+        stu.getInfo();
     }
 }
 
 
+
+
 class Person
 {
-    public  String name;
-    public  int age;
+		
+    public String name;
+    public int age;
 
-    public Person()
+		public Person()
+		{
+			
+		}
+		
+		public Person(String name)
+		{
+			this.name = name;
+		}
+		public Person(String name,int age)
+		{
+			this.name = name;
+			this.age = age;
+		}
+		
+    
+    public String getName()
     {
+    	return name;
     }
-
+    
+    public int getAge()
+    {
+    	return age;
+    }
+    
     public void SetName(String name)
     {
-        this.name = name;        
+        this.name = name;
     }
 
     public void SetAge(int age)
@@ -47,46 +54,63 @@ class Person
 
     public void getInfo()
     {
-        System.out.println("姓名:"+name+"年龄:"+age);
+        System.out.println("姓名： "+name+"年龄： "+age);
     }
 }
 
 class Stu extends Person
 {
-    public  String num;
-    public  String school;
-    public  String classes;
+		public  String school;
+		public String num;
+		public int name = 1000;
+		//public String name = "文文";
+		
+		public Stu()
+		{
+			
+		}
+		
+		
+		public Stu(String name,int age,String school,String num,int name)
+		{
+			super(name,age);
+			this.school = school;
+			this.num = num;
+			this.name = name;
+			
+		}
+			
 
-    public Stu()
-    {
-        super();
-    }
-
-    // 可以一次性修改学生的任何属性
-    public void getandName(String name,int age,String num,String school,String classes)
-    {
-        this.name = name;
-        this.age = age;
-        this.num = num;
-        this.school = school;
-        this.classes = classes;
-    }
-
-
-    // 
-    public void getInfo()
-    {
-        System.out.println("姓名:"+this.name+"年龄:"+this.age+"学号： "+this.num+"学校："+school+"班级： "+this.classes);
-    }
+		
+		public void SetSchool(String school)
+		{
+			this.school = school;
+		}
+		
+		public void SetNum(String num)
+		{
+			this.num = num;
+		}
+		
+		
+		
+		public String getSchool()
+		{
+			return school;
+		}
+		
+		public String getNum()
+		{
+			return num;
+		}
+		
+		
+		public void getInfo()
+		{
+			super.getInfo();
+			System.out.println(" 姓名: "+name+" 年龄: "+age+" 学校: "+school+" 学号: "+num+" name: "+name);
+		}
+		
+		
+	
 }
-
-
-// class Pet
-// {
-//     private String name;
-
-
-// }
-
-// Pet pet = new Pet();
-// pet. 

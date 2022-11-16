@@ -5,7 +5,8 @@ class Test_20221113
         Emp emp1 = new Emp();
         emp1.name = "刘备";
         emp1.sal = 4000;
-
+        emp1.getInfo();
+        
         Emp emp2 = new Emp();
         emp2.name = "张飞";
         emp2.sal = 3500;
