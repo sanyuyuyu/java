@@ -5,3 +5,5 @@ class Test_5
 
     }
 }
+
+class Person
