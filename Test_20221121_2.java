@@ -2,17 +2,18 @@ class Test_20221121_2
 {
     public static void main(String[] args)
     {
-        getPrintName();
-        
+        int j = 100;
+        System.out.println(getIntSum(j));
     }
 
-    public static void getPrintName()
+    public static int getIntSum(int j)
     {
-        String a = "你的名字很帅";
-        for(int x = 1;x < 4; x++)
-        
-            System.out.println(a);
-        
+        int sum = 0;
+        for(int i = 0; i <= j; i++)
+        {
+            sum = sum + i;
+           
+        }
+       return sum;
     }
 }
-
