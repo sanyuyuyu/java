@@ -34,6 +34,7 @@ class count
     public void Chucount(double chushu, double beichushu)
     {
         System.out.println(beichushu/chushu);
-        try catch 
+        
     }
 }
+
