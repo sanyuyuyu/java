@@ -1,4 +1,4 @@
-class Test_20221127
+class Test_20221128
 {
     public static void main(String[] args)
     {
@@ -16,10 +16,10 @@ class Employee //定义一个Employee的父类
 
     }
 
-    public Employee(String name,String date) //
+    public Employee(String name,int month) //
     {
         this.name = name;
-        this.date = date;
+        this.month = month;
     }
 
     public void setName(String name)
@@ -32,37 +32,59 @@ class Employee //定义一个Employee的父类
         return name;
     }
 
-    public String getDate()
-    {
-        return date;
-    }
-
-    public void getSalary(int month)
+    public void setMonth(int month)
     {
         this.month = month;
+    }
+
+    public int getMonth()
+    {
+        return month;
+    }
+
+    public double  getSalary(int month)
+    {
+        double salary = 0;
+        if(this.month == month)
+        {
+            salary = salary + 100;
+        }
+        return salary;
     }
 }
 
 class SalariedEmployee extends Employee
 {
-    private double salary;
+    private double monthsalary;
 
     public SalariedEmployee()
     {
 
     }
 
-    public void setSalary(String salary)
+    public SalariedEmployee(String name,int month,double monthsalary)
     {
+        super(name,month);
+        this.monthsalary = monthsalary;
+    }
 
+    public void setSalary(double monthsalary)
+    {
+        this.monthsalary = monthsalary;
     }
 
     public double getSalary()
     {
-        return salary;
+        return monthsalary;
     }
 
-
+    public double getSalary(int month)
+    {
+       double salary = monthsalary+super.getSalary(month);
+       return salary;
+        
+    }
+    
 }
 
 class HourlyEmployee extends Employee
@@ -73,6 +95,13 @@ class HourlyEmployee extends Employee
     public HourlyEmployee()
     {
 
+    }
+
+    public HourlyEmployee(String name,int month,double months,double hoursalary,double hourmonth)
+    {
+        super(name,month);
+        this.hoursalary = hoursalary;
+        this.hourmonth = hourmonth;
     }
 
     public HourlyEmployee(double hoursalary,double hourmonth)
@@ -99,6 +128,18 @@ class HourlyEmployee extends Employee
     public double getHourmonth()
     {
         return hourmonth;
+    }
+
+    public double getSalary(int month)
+    {
+        if(hourmonth<0)
+        {
+            System.out.println("无月薪");
+            return 0;
+        }
+        else if(hourmonth<=160)
+             return hoursalary*hourmonth + super.getSalary(month); //每月小于160小时的按每月工作的小时数乘以每小时的工资
+        else return hoursalary*160 + hoursalary*1.5*(hourmonth-160) + super.getSalary(month); //超出160小时的部分按照1.5 倍工资发放。
     }
 
 }
