@@ -17,8 +17,8 @@ class Test_20221126
 {
     public static void main(String[] args)
     {
-        count count1 = new count(100,0);
-        count1.Chucount(100,0);
+        count count1 = new count(0,100);
+        count1.Chucount(0,100);
     }
 }
 
