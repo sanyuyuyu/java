@@ -1,9 +1,6 @@
-
-/*
 import java.util.Scanner;
 
-
-class Test_20221129
+class Test_20221130
 {
     public static void main(String[] args)
     {
@@ -12,10 +9,62 @@ class Test_20221129
         Employee[] employee;
         employee = new Employee[100];
         employee[0] = new SalariedEmployee("zs",1,6000);
-        employee[1] = new HourlyEmployee("lisi",250,180);
-        employee[2]=new SalesEmployee("王五", 3, 6500, 0.15);
-        employee[3]=new BasePlusSalesEmployee("赵六", 4, 5000, 0.15, 2000);
-        employee[4]=new BasePlusSalesEmployee("qz",5,6000,0.1,3000);
+        employee[1] = new HourlyEmployee("lisi",2,50,180);
+        employee[2] = new SalesEmployee("ww",3,4555,0.15);
+        employee[3] = new BasePlusSalesEmployee("zl",1,5999,0.15,2000);
+        employee[4] = new BasePlusSalesEmployee("qz",5,6000,0.1,3000);
+
+         System.out.println("--------------欢迎来到员工管理系统---------------");
+        System.out.println("1.办理员工入职");
+        System.out.println("2.辞退员工");
+        System.out.println("3.修改员工信息");
+        System.out.println("4.查询员工信息");
+        System.out.println("0.退出");
+        System.out.println("-----------------------------");
+        System.out.println("请选择您想办理的业务");
+
+        while(true)
+        {
+            a = sc.nextInt();
+            switch(a)
+            {
+                case 1:
+                addEmployee(employee);
+                break;
+
+                case 2:
+                deleteEmployee(employee);
+                break;
+
+                case 3:
+                updateEmployee(employee);
+                break;
+
+                case 4:
+                searchEmployee(employee);
+                break;
+
+                case 0:
+                System.exit(0);
+                break;
+
+                default:
+                System.out.println("您的输入有误，请重新输入！");
+                break;
+            }
+        }
+
+    }
+
+    private static void searchEmployee(Employee[] employee)
+    {
+        int i,m,k;
+        for(k = 0;k<employee.length;k++)
+        {
+            if(employee[k]!=null)
+            System.out.println(employee[k].getName());
+        }
+        System.out.println(emp)
     }
 }
 
@@ -111,7 +160,7 @@ class HourlyEmployee extends Employee
 
     }
 
-    public HourlyEmployee(String name,int month,double months,double hoursalary,double hourmonth)
+    public HourlyEmployee(String name,int month,double hoursalary,double hourmonth)
     {
         super(name,month);
         this.hoursalary = hoursalary;
@@ -231,5 +280,3 @@ class BasePlusSalesEmployee extends SalesEmployee
         return basesalary + super.getSalary(month);
     }
 }
-*/
-
