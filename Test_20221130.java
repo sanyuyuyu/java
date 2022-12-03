@@ -64,7 +64,10 @@ class Test_20221130
             if(employee[k]!=null)
             System.out.println(employee[k].getName());
         }
-        System.out.println(emp)
+        System.out.println("请输入你想要查询的员工的姓名");
+        Scanner sc = new Scanner(System.in);
+        String name = sc.next();
+        for(i=0;i<employee.length;i++)
     }
 }
 
