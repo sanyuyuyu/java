@@ -74,7 +74,7 @@ class Stu extends Person
 			super(name,age);
 			this.school = school;
 			this.num = num;
-			//this.name = name;
+		this.name = name;
 			
 		}
 			
