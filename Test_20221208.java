@@ -9,4 +9,10 @@ class Test_20221208
 class Stu
 {
     public String name;
+    public int age;
+
+    public Stu()
+    {
+        
+    }
 }
