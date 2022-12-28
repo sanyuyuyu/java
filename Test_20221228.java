@@ -1,33 +1,20 @@
-class Test_20221227
+class Test_20221228
 {
     public static void main(String[] args)
     {
-        //new Mythead("Test_12").start();
-       /* Mythead t1 = new Mythead("线程1号");
-        Mythead t2 = new Mythead("线程2号");
-        Mythead t3 = new Mythead("线程3号");
+        Mythreadmp R1 = new Mythreadmp("卖票线程1号");
+        Mythreadmp R2 = new Mythreadmp("卖票线程2号");
+        Mythreadmp R3 = new Mythreadmp("卖票线程3号");
+        Thread t1 = new Thread(R1,"卖票线程1号");
+        Thread t2 = new Thread(R2,"卖票线程1号");
+        Thread t3 = new Thread(R3,"卖票线程1号");
         t1.start();
         t2.start();
-        t3.start();*/
+        t3.start();
+        
     }
 }
-/*
-class Mythead extends Thread 
-{
-    private String title;
 
-    public Mythead(String title)
-    {
-        this.title = title;
-    }
-
-    public void run()
-    {
-        System.out.println("我是"+title+"，我整运行!");
-    }
-
-
-}*/
 
 class Mythreadmp implements Runnable
 {
