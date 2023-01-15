@@ -1,11 +1,7 @@
-class Test_20230114
+class Test_20230115
 {
     public static void main(String[] args)
     {
-
+        
     }
-}
-class Dog
-{
-    private String 
 }
