@@ -5,6 +5,6 @@ class Test_20230128
         int score = 99;
         p.setScore(score);
         log.info("Set score" + score + "for Person "+p.getName() + "ok .");
-        
-    }
+
+    }v
 }
