@@ -19,7 +19,7 @@ class Test_20230213
         }
         else
         {//如果是负数
-            return -input;//
+            return -input;//取反
         }
     }
 
