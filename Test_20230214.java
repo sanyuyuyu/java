@@ -68,7 +68,7 @@ class Test_20230214
 	/*	int i = 1;
 		int sum = 0;
 		int j = 100;
-		while(i<100)
+		while(i<=100)
 		{
 			sum = sum + i;
 			i++;
@@ -76,7 +76,7 @@ class Test_20230214
 		System.out.println(sum);
 		
 		
-		for(i = 0;i < j; i++)
+		for(i = 1;i < j; i++)
 		{
 			sum = sum + i * 2;
 			
@@ -91,9 +91,20 @@ class Test_20230214
 		 {
 			 continue;
 		 }
+         System.out.println(numm);
 	 }
 	 
 
 	}
 	
+
+    for(int i = 1; i <= 9;i++)
+    {
+        for(int j = 1; j <= i;j++)
+        {
+            System.out.print(j+"*"+i+"="+j*i);
+            System.out.print("\n");
+        }
+        System.out.print("\n");
+    }
 }
