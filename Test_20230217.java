@@ -29,6 +29,14 @@ public class Test_20230217
 		stu2 = stu1;
 		stu2.getInfo();
 		
+        System.out.println(10/3);
+        int a = 2 ;
+		int b = (a++) * 3 ;
+		int c = (++a) * 3 ;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
 	}
 
 }
