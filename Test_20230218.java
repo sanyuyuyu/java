@@ -1,9 +1,9 @@
-
-
 import java.util.Scanner;
 
-public class Test_20230218 {
-   public static void main(String[] args) {
+public class Test_20230218 
+{
+   public static void main(String[] args) 
+   {
       System.out.println("输入两个整数：");
       int a = new Scanner(System.in).nextInt();
       int b = new Scanner(System.in).nextInt();
@@ -14,11 +14,14 @@ public class Test_20230218 {
       System.out.println("最小公倍数："+x);
    }
 
-   private static int zdgys(int a, int b) {
+   private static int zdgys(int a, int b) 
+   {
       int min = a<b ? a : b;
-      for(int i=min; i>=1; i--) {
+      for(int i=min; i>=1; i--) 
+      {
          //i能把a和b同时整除
-         if(a%i==0 && b%i==0) {
+         if(a%i==0 && b%i==0) 
+         {
             return i;
          }
       }
@@ -27,11 +30,14 @@ public class Test_20230218 {
       return 0;
    }
 
-   private static long zxgbs(int a, int b) {
+   private static long zxgbs(int a, int b)
+    {
       int max = a>b? a : b;
-      for(long i=max; ;i+=max) {
+      for(long i=max; ;i+=max) 
+      {
          //i能同时被a和b整除
-         if(i%a==0 && i%b==0) {
+         if(i%a==0 && i%b==0)
+        {
             return i;
          }
       }
